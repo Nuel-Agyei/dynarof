@@ -8,7 +8,7 @@ export const blogPosts = [
     title: "5 Signs Your Roof Needs Immediate Attention",
     excerpt: "Ignoring early warning signs can turn a simple repair into a full replacement. Here's what to watch for before it's too late.",
     date: "March 12, 2026",
-    content: `Your roof doesn't fail overnight. It sends signals — subtle at first, then impossible to ignore. The difference between a $500 repair and a $15,000 replacement often comes down to catching those signals early.
+    content: `Your roof doesn't fail overnight. It sends signals — subtle at first, then impossible to ignore. The difference between a GHC500 repair and a GHC15,000 replacement often comes down to catching those signals early.
 
 **1. Curling or Buckling Shingles**
 
@@ -51,7 +51,7 @@ We maintain direct relationships with manufacturers like CertainTeed, Owens Corn
 
 **The True Cost of "Saving Money"**
 
-A cheaper shingle might save $800 on installation day. But if it fails five years early, you're looking at full tear-off and replacement costs that dwarf the original savings. We calculate total cost of ownership — including expected maintenance, warranty coverage, and projected lifespan — before recommending any system.
+A cheaper shingle might save GHC800 on installation day. But if it fails five years early, you're looking at full tear-off and replacement costs that dwarf the original savings. We calculate total cost of ownership — including expected maintenance, warranty coverage, and projected lifespan — before recommending any system.
 
 **Our Standard Isn't the Minimum**
 

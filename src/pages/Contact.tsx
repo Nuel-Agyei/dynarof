@@ -25,7 +25,7 @@ const Contact = () => (
                 <input
                   type="text"
                   className="w-full border border-border bg-background px-4 py-3 text-sm font-body text-foreground focus:outline-none focus:border-gold transition-colors"
-                  placeholder="John Doe"
+                  placeholder="Akosua"
                 />
               </div>
               <div>
@@ -33,7 +33,7 @@ const Contact = () => (
                 <input
                   type="tel"
                   className="w-full border border-border bg-background px-4 py-3 text-sm font-body text-foreground focus:outline-none focus:border-gold transition-colors"
-                  placeholder="(303) 555-1234"
+                  placeholder="+233 54 123 4567"
                 />
               </div>
             </div>
@@ -42,7 +42,7 @@ const Contact = () => (
               <input
                 type="email"
                 className="w-full border border-border bg-background px-4 py-3 text-sm font-body text-foreground focus:outline-none focus:border-gold transition-colors"
-                placeholder="john@example.com"
+                placeholder="trice@example.com"
               />
             </div>
             <div>
