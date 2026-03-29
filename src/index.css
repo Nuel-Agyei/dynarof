@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 216 65% 15%;
+
+    --card: 216 65% 15%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 216 65% 15%;
+
+    --primary: 216 65% 15%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 42 48% 54%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 20% 95%;
+    --muted-foreground: 216 20% 46%;
+
+    --accent: 42 48% 54%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 216 30% 85%;
+    --input: 216 30% 85%;
+    --ring: 42 48% 54%;
+
+    --radius: 0.25rem;
+
+    --navy: 216 65% 15%;
+    --navy-dark: 216 70% 10%;
+    --gold: 42 48% 54%;
+    --gold-light: 42 60% 65%;
+
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+
+    --sidebar-background: 216 65% 15%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 42 48% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 216 65% 20%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 216 40% 25%;
+    --sidebar-ring: 42 48% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-24 py-20 md:py-28;
+  }
+
+  .gold-rule {
+    @apply w-full h-px bg-secondary/40;
+  }
+
+  .gold-underline {
+    @apply relative inline-block;
+  }
+
+  .gold-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-secondary;
+  }
+
+  .hero-pattern {
+    background-image:
+      radial-gradient(circle at 20% 50%, hsl(216 65% 20% / 0.5) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(42 48% 54% / 0.08) 0%, transparent 40%),
+      linear-gradient(135deg, hsl(216 70% 10%) 0%, hsl(216 65% 15%) 50%, hsl(216 60% 18%) 100%);
+    background-size: 100% 100%;
+  }
+
+  .hero-pattern::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
