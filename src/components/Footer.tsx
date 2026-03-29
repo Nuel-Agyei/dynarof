@@ -42,7 +42,7 @@ const Footer = () => (
             <p>Lashibi 19 Junction, Water Works</p>
             <p>Accra, Ghana</p>
             <p className="pt-2">
-              <a href="tel:+233545824980" className="hover:text-primary-foreground transition-colors">+233545824980</a>
+              <a href="tel:+233545824980" className="hover:text-primary-foreground transition-colors">+233 54 582 4980</a>
             </p>
             <p>
               <a href="mailto:dynarofroofingsystem@gmail.com" className="hover:text-primary-foreground transition-colors">hello@dynaroof.com</a>
