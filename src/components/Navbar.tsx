@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import fav from "@/assets/favicon.jpeg";
 
 const navLinks = [
   { label: "Home", path: "/" },
@@ -33,7 +34,8 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
-        <Link to="/" className="font-display text-xl md:text-2xl font-bold tracking-tight text-primary-foreground">
+        <Link to="/" className="font-display flex text-xl md:text-2xl font-bold tracking-tight text-primary-foreground">
+        <img className="h-auto w-12 m-2" src={fav} alt="" />
           Dyna<span className="text-gold">rof</span>
         </Link>
 
