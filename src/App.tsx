@@ -11,7 +11,7 @@ import BlogPost from "./pages/BlogPost";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
-import { Analytics } from '@vercel/analytics/next';
+import {Analytics} from '@vercel/analytics/react';
 
 const queryClient = new QueryClient();
 
@@ -22,6 +22,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <ScrollToTop />
+         <Analytics />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
@@ -33,7 +34,7 @@ const App = () => (
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
-    <Analytics />
+   
   </QueryClientProvider>
 );
 
