@@ -26,18 +26,7 @@ const features = [
   },
 ];
 
-const testimonials = [
-  {
-    quote: "Dynarof replaced our entire commercial roof in under a week. Zero disruptions, zero surprises. They're the only contractor I recommend now.",
-    name: "Beatrice",
-    title: "Property Manager, Lakeview Commercial",
-  },
-  {
-    quote: "After two bad experiences with other roofers, Dynarof restored my faith. They were honest about what needed fixing and didn't upsell a thing.",
-    name: "David",
-    title: "Homeowner, Aurora",
-  },
-];
+
 
 const Index = () => (
   <Layout>
@@ -99,35 +88,6 @@ const Index = () => (
                 <p className="text-muted-foreground font-body text-sm leading-relaxed">
                   {feat.description}
                 </p>
-              </div>
-            </ScrollFadeIn>
-          ))}
-        </div>
-      </div>
-    </section>
-
-    {/* Testimonials */}
-    <section className="section-padding bg-muted">
-      <div className="max-w-7xl mx-auto">
-        <ScrollFadeIn>
-          <p className="text-sm font-body font-semibold tracking-widest uppercase text-gold mb-4">Testimonials</p>
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
-            What our clients say.
-          </h2>
-        </ScrollFadeIn>
-
-        <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-8">
-          {testimonials.map((t, i) => (
-            <ScrollFadeIn key={i} delay={i * 0.12}>
-              <div className="bg-navy p-8 md:p-10 relative">
-                <span className="font-display text-6xl text-gold/30 absolute top-4 left-6 leading-none">"</span>
-                <p className="text-primary-foreground/80 font-body text-base leading-relaxed mt-8 mb-8">
-                  {t.quote}
-                </p>
-                <div>
-                  <p className="text-primary-foreground font-body font-semibold text-sm">{t.name}</p>
-                  <p className="text-primary-foreground/50 font-body text-xs mt-1">{t.title}</p>
-                </div>
               </div>
             </ScrollFadeIn>
           ))}
